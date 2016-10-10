@@ -10,4 +10,4 @@ import Class.Magma
 -- Obeys: neutral ? m = m
 --        m ? neutral = m
 class Magma m => Neutral m where
-  neutral :: m  
+  neutral :: m 

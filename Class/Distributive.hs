@@ -21,4 +21,4 @@ class
 (a :: r) + b  = (inject (((inject a) :: Add r) ? ((inject b) :: Add r))) :: r
 
 (*) :: Distributive r => r -> r -> r
-(a :: r) * b = (inject (((inject) :: Mul r) ? ((inject b) :: Mul r))) :: r
+(a :: r) * b = (inject (((inject a) :: Mul r) ? ((inject b) :: Mul r))) :: r
