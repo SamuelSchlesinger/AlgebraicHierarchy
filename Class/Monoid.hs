@@ -3,6 +3,8 @@
 module Class.Monoid
   ( 
     Monoid(..)
+  , (++)
+  , empty
   ) where
 
 import Class.Associative

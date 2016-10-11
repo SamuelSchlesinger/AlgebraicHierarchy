@@ -6,6 +6,7 @@ module Class.Subset
   ) where
 
 import Data.Partial
+import Data.Bool
 import Data.Proxy
 
 -- | An isomorphism which is partial on the way there

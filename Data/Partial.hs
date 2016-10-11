@@ -5,8 +5,9 @@ module Data.Partial
     Partial(..)
   ) where
 
+import Data.Bool
+
 data Partial a = Defined a | Undefined
-  deriving Show
 
 partial :: b -> (a -> b) -> Partial a -> b
 partial b f p = case p of
