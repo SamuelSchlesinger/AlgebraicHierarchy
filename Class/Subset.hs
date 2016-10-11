@@ -17,5 +17,3 @@ inSubset :: (s <: m) => Proxy s -> m -> Bool
 inSubset (p :: Proxy s) m = case ((extract m) :: Partial s)  of
   Undefined -> False
   Defined _ -> True
-
-

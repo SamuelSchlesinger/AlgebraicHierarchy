@@ -11,3 +11,6 @@ import Class.Magma
 --        m ? neutral = m
 class Magma m => Neutral m where
   neutral :: m 
+
+instance Neutral [a] where
+  neutral = []

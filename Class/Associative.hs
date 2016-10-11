@@ -11,5 +11,7 @@ import Class.Magma
 -- Obeys: a <> (b <> c) = (a <> b) <> c
 class Magma m => Associative m
 
+instance Associative [a]
+
 (<>) :: Associative m => m -> m -> m
 (<>) = (?)

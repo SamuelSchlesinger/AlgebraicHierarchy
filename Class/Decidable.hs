@@ -15,3 +15,4 @@ class Decidable a where
   (==) :: a -> a -> Bool
   (!=) :: a -> a -> Bool
   a != b = not (a == b)
+
